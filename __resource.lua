@@ -8,6 +8,8 @@ files {
     'fonts/gravity.otf',
 
     'img/logo.png',
+
+    'js/progressbar-handler.js',
 }
 
 loadscreen 'index.html'

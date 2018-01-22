@@ -37,6 +37,7 @@ body
 #loading-text
 {
     display: inline-block;
+    margin-left: 10px;
 }
 
 #loading-bar[value] 
