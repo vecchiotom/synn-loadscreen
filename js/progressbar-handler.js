@@ -1,36 +1,55 @@
+var debug = document.getElementById("debug");
 var progressBar = document.getElementById("loading-bar");
 var progressBarText = document.getElementById("loading-bar-progress");
 
-var percentageIncrement = 14.2857
-var totalPercentage = 0;
-
-var initJobCount = 0;
-var dataJobCount = 0;
-    
+var loadingStatesCount = 0;
+var states = {};
+ 
 const handlers = 
 {
-    startInitFunctionOrder(data)
+    startInitFunction(data)
     {
-        initJobCount = data.count;
-        totalPercentage = totalPercentage + 14.2857;
-        updatePercentage(0)
+        //Create a entry for every type.
+        if(states[data.type] == null)
+        {
+            states[data.type] = {};
+            states[data.type].count = 0;
+            states[data.type].done = 0;   
+        }
     },
 
-    initFunctionInvoking(data)
+    startInitFunctionOrder(data)
     {
-        var percent = (data.idx / initJobCount)
-        updatePercentage(14.2857 * percent)
+        //Collect the total count for each type.
+        if(states[data.type] != null)
+        {
+            states[data.type].count += data.count;
+        }
     },
+
+    initFunctionInvoked(data)
+    {
+        //Increment the done accumulator based on type.
+        if(states[data.type] != null)
+        {
+            states[data.type].done++;
+        }
+    },
+
     startDataFileEntries(data)
     {
-        initJobCount = data.count;
+        //Manually add the MAP type.
+        states["MAP"] = {};
+        states["MAP"].count = data.count;
+        states["MAP"].done = 0; 
     },
+
     performMapLoadFunction(data)
     {
-        dataJobCount++;
-        var percent = (dataJobCount / initJobCount)
-        updatePercentage(14.2857 * percent)
+        //Increment the map done accumulator.
+        states["MAP"].done++;
     }
+
 };
 
 window.addEventListener('message', function(e)
@@ -38,8 +57,9 @@ window.addEventListener('message', function(e)
     (handlers[e.data.eventName] || function() {})(e.data);
 });
 
-function updatePercentage(percent)
+setInterval(UpdateDebug, 100);
+
+function UpdateDebug()
 {
-    progressBar.value = parseInt(Math.ceil(totalPercentage + percent));
-    progressBarText.innerHTML = parseInt(Math.ceil(totalPercentage + percent));
+    debug.innerHTML = JSON.stringify(states);
 }
