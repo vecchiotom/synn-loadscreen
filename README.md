@@ -67,7 +67,7 @@ This project falls under the GNU GPLv2 license. (see LICENSE)
 
 If you intend to modify this resource:
 - Have a reference back to this GitHub repository
-- The source must be publicly avaible (as stated in GPL 2.0)
+- The source must be publicly available (as stated in GPL 2.0)
 - State the changes you made.
 - Include the same license (GNU GPL 2.0) (See LICENSE)
 
