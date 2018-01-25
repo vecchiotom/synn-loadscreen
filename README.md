@@ -34,7 +34,9 @@ A simple loading screen resource for FiveM.
 
 2) Create a folder in your resources folder named "synn-loadscreen"
 
-3) Add "start synn-loadscreen" to your server.cfg
+3) Add the files into the newly create folder in the resources.
+
+4) Add "start synn-loadscreen" to your server.cfg
 
 And you are good to go!
 
