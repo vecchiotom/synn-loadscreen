@@ -14,6 +14,9 @@ body
 {
     font-family: gravity;
     color: rgb(230,230,230);  
+
+    animation-name: hammer;
+    animation-duration: 10s;
 }
 
 #logo
@@ -56,20 +59,15 @@ body
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
 
-#loading-bar[value]::-webkit-progress-value
+#loading-bar::-webkit-progress-value
 {
-  background-image:-webkit-linear-gradient(-45deg, 
-	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
-	                           rgba(0,0, 0, .1) 66%, transparent 66%),
-	   -webkit-linear-gradient(top, 
-	                           rgba(255, 255, 255, .25), 
-	                           rgba(0, 0, 0, .25)),
-	   -webkit-linear-gradient(left, rgb(233,198,70), rgb(255,231,173));
-
+    animation-name: example;
+    animation-duration: 10s;
+    animation-play-state: running;
+    background-color: rgb(233,198,70);
     border-radius: 20px; 
     background-size: 60px 30px, 100% 100%, 100% 100%;
 }
-
 .stick-to-right
 {
     float:right;
