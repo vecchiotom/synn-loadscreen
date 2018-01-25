@@ -42,7 +42,8 @@ And you are good to go!
 
 ## Known issues
 
-#1  Upon reconnecting to a server, the loadscreen will be stuck at 0% and will not progress.
+[Issue 1](https://github.com/Syntasu/synn-loadscreen/issues/1)
+Upon reconnecting to a server, the loadscreen will be stuck at 0% and will not progress.
 
 <hr>
 
