@@ -45,7 +45,8 @@ And you are good to go!
 ## Known issues
 
 [Issue 1](https://github.com/Syntasu/synn-loadscreen/issues/1)
-Upon reconnecting to a server, the loadscreen will be stuck at 0% and will not progress.
+Race condition between my loadscreen resource and the events that need to get passed to the loadscreen.
+Implications are that some loadbars do not fill and upon connecting nothing happens.
 
 <hr>
 
