@@ -64,6 +64,7 @@ function UpdateMulti()
     }
 }    
 
+//Update the single progressbar.
 function UpdateSingle()
 {
     UpdateTotalProgress();
@@ -73,6 +74,7 @@ function UpdateSingle()
 
 }
 
+// Update the total percentage loaded (above the progressbar on the right).
 function UpdateTotalProgress()
 {
         //Set the total progress counter:
@@ -88,6 +90,7 @@ function UpdateTotalProgress()
         progressCache[0] = total;
 }
 
+// Rotate message, load new message every x milliseconds.
 function RotateMessage()
 {
     var message = document.getElementById("message");

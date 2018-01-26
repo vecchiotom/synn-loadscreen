@@ -1,10 +1,27 @@
 var config = 
-{
-    image: "img/logo2.png",
+{    
+    /* 
+        Relative path the the logo we want to display.
+    */
+    image: "img/logo.png",
+
+    /*
+        How big should the logo be?
+        The values are: [width, height].
+        Recommended to use square images less than 1024px.
+    */
     imageSize: [512, 512],
 
+    /*
+        Want to just have one progressbar? Set this to true.
+        Want to have a progressbar for each type? Set this to false. 
+     */
     singleProgressBar: true,
 
+    /*
+        Here you can disable some of progressbars.
+        Only applys if `singleProgressbar` is false.
+    */
     progressBars:
     {
         "INIT_CORE": {
@@ -54,7 +71,7 @@ var config =
     ],
 
     /*
-        Rotate the loading message every 8000 milliseconds (default value).
+        Rotate the loading message every 5000 milliseconds (default value).
     */
     loadingMessageSpeed: 5 * 1000,
 }
