@@ -34,7 +34,9 @@ A simple loading screen resource for FiveM.
 
 2) Create a folder in your resources folder named "synn-loadscreen"
 
-3) Add "start synn-loadscreen" to your server.cfg
+3) Add the files into the newly create folder in the resources.
+
+4) Add "start synn-loadscreen" to your server.cfg
 
 And you are good to go!
 
@@ -42,7 +44,9 @@ And you are good to go!
 
 ## Known issues
 
-#1  Upon reconnecting to a server, the loadscreen will be stuck at 0% and will not progress.
+[Issue 1](https://github.com/Syntasu/synn-loadscreen/issues/1)
+Race condition between my loadscreen resource and the events that need to get passed to the loadscreen.
+Implications are that some loadbars do not fill and upon connecting nothing happens.
 
 <hr>
 
@@ -64,7 +68,7 @@ This project falls under the GNU GPLv2 license. (see LICENSE)
 
 If you intend to modify this resource:
 - Have a reference back to this GitHub repository
-- The source must be publicly avaible (as stated in GPL 2.0)
+- The source must be publicly available (as stated in GPL 2.0)
 - State the changes you made.
 - Include the same license (GNU GPL 2.0) (See LICENSE)
 
