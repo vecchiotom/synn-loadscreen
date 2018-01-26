@@ -19,6 +19,8 @@ A simple loading screen resource for FiveM.
 ## Planned
  
 - Music player
+    - Can be stopped/paused.
+	- Volume controls
 
 <hr>
 
