@@ -36,22 +36,25 @@ var config =
     */
     loadingMessages: 
     [
-        "Hold on, Picking up snails... &#x1f40c;",
-        "Hold on, Placing snails... &#x1f40c;",
-        "Hold on, crushing snails.... &#x1f40c; &#x1f528;",
-        "Hold on, stepping snails.... &#x1f40c; &#x1f462;",
-        "Just a second, putting slugs back into their shell...",
-        "Just a moment, playing breakout with a snail...",
-        "Hold on, programming snail AI... &#x1f9e0;",
-        "Hold on, sprinkling salt over a snail...",
-        "Just a second, selling snails to a french guy. &#x1f1eb;",
+        "Picking up snails... &#x1f40c;",
+        "Placing snails on the map... &#x1f40c;",
+        "Crushing a snail.... &#x1f40c; &#x1f528;",
+        "Stepping on a snail.... &#x1f40c; &#x1f462;",
+        "Putting slugs back into their shell.. &#x1f41a.",
+        "Playing cricket with a snail... &#x1f3cf",
+        "Programming snail AI... &#x1f9e0;",
+        "Selling snails to a french guy. &#x1f956;",
         "Eating FiveM's mascot snail... &#x1f374;",
-        "Loading the game at a... snails pace, ba-dum-tss &#x1f602;", 
         "Syntasu is snailsome! &#x1f60d;",
+        "Oof!",
+        "Learning a snail to drive... &#x1f697;",
+        "Golfing using a snail... &#x1f3cc;",
+        "Calling PETA for animal abuse... &#x1f4f1;",
+        "No snails were hurt during this loadscreen. &#x1f691;",
     ],
 
     /*
-        Rotate the loading message every 500 milliseconds (default value).
+        Rotate the loading message every 8000 milliseconds (default value).
     */
-    loadingMessageSpeed: 500,
+    loadingMessageSpeed: 5 * 1000,
 }

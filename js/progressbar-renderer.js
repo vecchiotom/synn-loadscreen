@@ -35,6 +35,13 @@ function Init()
         //Start updating.
         setInterval(UpdateMulti, 250);
     }
+
+    //Start with random message.
+    var message = document.getElementById("message");
+    message.innerHTML = config.loadingMessages[Math.floor(Math.random()*config.loadingMessages.length)];
+
+    //Account for transition time (about ~400ms).
+    setInterval(RotateMessage, (config.loadingMessageSpeed + 600));
 }
 
 function UpdateMulti()
@@ -80,3 +87,23 @@ function UpdateTotalProgress()
         totalProgress.innerHTML = Math.round(total);
         progressCache[0] = total;
 }
+
+function RotateMessage()
+{
+    var message = document.getElementById("message");
+    message.classList.add("fade");
+
+    setTimeout(function()  
+    {
+        var message = document.getElementById("message");
+        message.innerHTML = config.loadingMessages[Math.floor(Math.random()*config.loadingMessages.length)];
+        message.classList.add("unfade");
+
+        setTimeout(function()  
+        {
+            message.classList.remove("fade");
+            message.classList.remove("unfade");
+        }, 200);    
+    }, 200);
+}
+

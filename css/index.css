@@ -36,7 +36,7 @@ body
     margin-top: 120px;
 }
 
-#loading-text
+.loading-text
 {
     display: inline-block;
     margin-left: 10px;
@@ -79,4 +79,17 @@ progress::-webkit-progress-value
 .hide 
 {
     display: none;
+}
+
+#message {
+    opacity:1;
+    transition: opacity 0.3s; 
+}
+    
+#message.fade {
+    opacity:0;
+}
+
+#message.unfade {
+    opacity:1;
 }
