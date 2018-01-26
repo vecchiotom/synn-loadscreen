@@ -1,7 +1,7 @@
 var config = 
 {
-    image: "img/logo.png",
-    imageSize: [384, 384],
+    image: "img/logo2.png",
+    imageSize: [512, 512],
 
     singleProgressBar: true,
 

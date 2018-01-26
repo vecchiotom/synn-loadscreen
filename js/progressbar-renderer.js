@@ -6,6 +6,12 @@ var progressCache = [];
 
 function Init()
 {
+    var logo = document.getElementById("logo");
+    logo.setAttribute("src", config.image);
+    logo.setAttribute("width", config.imageSize[0]);
+    logo.setAttribute("height", config.imageSize[1]);
+    
+
     if(config.singleProgressBar)
     {
         //Start single progressbar.

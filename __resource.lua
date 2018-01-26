@@ -9,6 +9,7 @@ files {
     'fonts/gravity.otf',
 
     'img/logo.png',
+    'img/logo2.png',
 
     'js/progressbar-handler.js',
     'js/progressbar-config.js',

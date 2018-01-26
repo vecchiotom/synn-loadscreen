@@ -20,8 +20,8 @@ body
 
 #logo
 {
-    width: 384;
-    height: 384;
+    max-width: 1024;
+    max-height: 1024;
 
     display: block;
     margin: auto;
@@ -33,7 +33,7 @@ body
     margin: auto;
 
     width: 60%;
-    margin-top: 200px;
+    margin-top: 120px;
 }
 
 #loading-text
