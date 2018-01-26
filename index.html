@@ -1,6 +1,8 @@
 <html>
     <head>
-        <link type ="text/css" rel ="stylesheet" href ="css/index.css" />
+        <link type ="text/css" rel ="stylesheet" href ="css/index.css"/>
+        <link type ="text/css" rel ="stylesheet" href ="css/colors.css"/>
+        
     </head>
 
     <body>
@@ -8,22 +10,25 @@
         <p id="progress"></p>
         
 
-        <img id="logo" src="img/logo.png">
+        <img id="logo" src="img/logo.png"/>
 
-        <div id="loading-bar-container">
+        <div id="content-container">
 
-            <span position="">
+            <span>
                 <p id="loading-text">Hold on, crushing snails.... &#x1f40c; &#x1f528;</p>
-                <p class="stick-to-right" id="loading-text"><span id="loading-bar-progress">0</span>%</p>
+                <p class="stick-to-right" id="loading-text"><span id="progress-bar-value">0</span>%</p>
             </span>
-
-            <progress id="loading-bar" max="100" value="80"/>
-
-        </div>
             
-
+            <progress id="pb0" class="hide" min="0" max="100" value="0"></progress>
+            <progress id="pb1" class="hide" min="0" max="100" value="0"></progress>
+            <progress id="pb2" class="hide" min="0" max="100" value="0"></progress>
+            <progress id="pb3" class="hide" min="0" max="100" value="0"></progress>
+            <progress id="pb4" class="hide" min="0" max="100" value="0"></progress>                
+        </div>
     </body>
 
     <script src="js/progressbar-config.js"></script>
+    <script src="js/progressbar-main.js"></script>
     <script src="js/progressbar-handler.js"></script>
+    <script src="js/progressbar-renderer.js"></script>
 </html>

@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: gravity;
     src: url(../fonts/gravity.otf);
@@ -28,7 +27,7 @@ body
     margin: auto;
 }
 
-#loading-bar-container
+#content-container
 {
     display: block;
     margin: auto;
@@ -43,7 +42,12 @@ body
     margin-left: 10px;
 }
 
-#loading-bar[value] 
+progress
+{
+    margin-top: 5px;
+}
+
+progress[value] 
 {
    -webkit-appearance: none;
    appearance: none;
@@ -52,23 +56,27 @@ body
    height: 30px;
 }
 
-#loading-bar[value]::-webkit-progress-bar
+progress[value]::-webkit-progress-bar
 {
   background-color: rgb(60,60,60);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
 
-#loading-bar::-webkit-progress-value
+progress::-webkit-progress-value
 {
     animation-name: example;
     animation-duration: 10s;
     animation-play-state: running;
-    background-color: rgb(233,198,70);
     border-radius: 20px; 
     background-size: 60px 30px, 100% 100%, 100% 100%;
 }
 .stick-to-right
 {
     float:right;
+}
+
+.hide 
+{
+    display: none;
 }

@@ -1,65 +1,40 @@
-var Config = 
+var config = 
 {
-    /*
-        The image we want to show in the loading screen.
-        Currently the CSS is setup for square (1:1 ratio) images.
-    */
     image: "img/logo.png",
-
-    /*
-        The dimensions of the image (width, height)
-    */
     imageSize: [384, 384],
 
-    /*
-        Toggle to set wether the progressbar should be a single progressbar or splitup in multiple
-        True -> Single progressbar that accommodates all the states.
-        False -> Multiple progressbars, one for each state (configurable).
-    */
     singleProgressBar: true,
-    singleProgressBarColor: [233, 198, 70],
 
-    /*
-        If multiple progressbars are enabled, the following values
-        will be used from the config. These each apply to a specific progressbar.
-    */
-    coreProgressBar = 
+    progressBars:
     {
-        "enabled": true,
-        "color": [255, 102, 102],
-    },
+        "INIT_CORE": {
+            enabled: true,
+        },
 
-    beforeProgressBar = 
-    {
-        "enabled": true,
-        "color": [102, 194, 255],
-    },
+        "INIT_BEFORE_MAP_LOADED": {
+            enabled: true,
+        },
 
-    mapProgressbar = 
-    {
-        "enabled": true,
-        "color": [102, 102, 255],
-    },
+        "MAP": {
+            enabled: true,
+        },
 
-    afterProgressBar = 
-    {
-        "enabled": true,
-        "color": [133, 224, 133],
-    },
+        "INIT_AFTER_MAP_LOADED": {
+            enabled: true,
+        },
 
-    sessionProgressBar = 
-    {
-        "enabled": true,
-        "color": [255, 204, 0],
+        "INIT_SESSION": {
+            enabled: true,
+        }
     },
 
     /*
         Loading messages will be randomly picked from the array.
         The message is located on the left side above the progressbar.
-        The text will slow
+        The text will slowly fade in and out, each time with another message.
         You can use UTF-8 emoticons inside loading messages! 
     */
-    loadingMessages = 
+    loadingMessages: 
     [
         "Hold on, Picking up snails... &#x1f40c;",
         "Hold on, Placing snails... &#x1f40c;",
@@ -78,6 +53,5 @@ var Config =
     /*
         Rotate the loading message every 500 milliseconds (default value).
     */
-    loadingMessageSpeed = 500,
-        
-};
+    loadingMessageSpeed: 500,
+}
