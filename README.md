@@ -76,7 +76,6 @@ If you intend to modify this resource:
 - Include the same license (GNU GPL 2.0) (See LICENSE)
 
 If you intend to distibute
-- State the creators name (i.e. Made by syntasu).
 - Have a reference back to this GitHub repository or FiveM topic.
 
 <hr>
