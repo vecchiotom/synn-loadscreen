@@ -21,7 +21,7 @@ function onYouTubeIframeAPIReady()
 
     player = new YT.Player('player', {
         width: '1',
-        height: '1',
+        height: '',
         playerVars: {
             'autoplay': 0,
             'controls': 0,
@@ -30,7 +30,8 @@ function onYouTubeIframeAPIReady()
         },
         events: {
             'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
+            'onStateChange': onPlayerStateChange,
+            'onError': onPlayerError 
         }
     });
 }
@@ -50,16 +51,49 @@ function onPlayerStateChange(event)
         title = event.target.getVideoData().title;
     }
 
-    if (event.data == YT.PlayerState.ENDED) {
+    if (event.data == YT.PlayerState.ENDED) 
+    {
         index++;
         play();
     }
 }
 
+function onPlayerError(event)
+{
+    switch (event.data) 
+    {
+        case 2:
+            console.log("Invalid video url!");
+            break;
+        case 5:
+            console.log("HTML 5 player error!");
+        case 100:
+            console.log("Video not found!");
+        case 101:
+        case 150:
+            console.log("Video embedding not allowed.");
+            break;
+        default:
+            console.log("Looks like you got an error bud.")
+    }
+
+    skip();
+}
+
+function skip()
+{
+    index++;
+    play();
+}
+
 function play() 
 {
+    title = "n.a.";
+
     var idx = index % config.music.length;
     var videoId = config.music[idx];
+
+    console.log("Playing next.. id: " + idx + " vid:" + videoId);
 
     player.loadVideoById(videoId, 0, "tiny");
     player.playVideo();
