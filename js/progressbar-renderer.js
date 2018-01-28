@@ -105,22 +105,13 @@ function UpdateTotalProgress()
 // Rotate message, load new message every x milliseconds.
 function RotateMessage()
 {
-    var message = document.getElementById("message");
-    message.classList.add("fade");
+    lib.fadeInOut(600, "message");
 
-    setTimeout(function()  
+    setTimeout(function()
     {
         var message = document.getElementById("message");
-        var index = lib.rand(0, config.loadingMessages.length);
-        
+        var index = lib.rand(0, config.loadingMessages.length);      
         message.innerHTML = config.loadingMessages[index];
-        message.classList.add("unfade");
-
-        setTimeout(function()  
-        {
-            message.classList.remove("fade");
-            message.classList.remove("unfade");
-        }, 200);    
-    }, 200);
+    }, 600);
 }
 

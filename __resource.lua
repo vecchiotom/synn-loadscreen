@@ -3,6 +3,7 @@ description 'A simple loading screen!'
 files {
     'index.html',
 
+    'css/synn.css'
     'css/index.css',
     'css/colors.css',
     
@@ -12,7 +13,7 @@ files {
     'img/logo.png',
     'img/logo2.png',
 
-    'js/synn-lib.js',
+    'js/synn.js',
     'js/config.js',
     'js/progressbar-handler.js',
     'js/progressbar-main.js',
