@@ -99,6 +99,7 @@ If you wish to contact me:
 - Via the [FiveM discord](https://discord.gg/GtvkUsc), send me a friend request (PM's are disabled) 
 - Via my own discord, [here](https://discord.gg/QbMfZvH)
 - Via the [FiveM forums](https://forum.fivem.net/u/syntasu)
+- Via e-mail: `fivem at synn.nl`
 
 &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;  <sub><sub>Discord is the prefered way of contact.</sub></sub>
 
