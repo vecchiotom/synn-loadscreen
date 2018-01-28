@@ -105,13 +105,14 @@ var config =
         array of images you'd like to display in the background.
         You can:
         - use a link (https://example.com/image.jpg)
-        - use a image stored in the img folder (example.jpg)
+        - use a image stored in the img folder (img/example.jpg)
     */
     background: 
     [
-        "https://www.planwallpaper.com/static/images/20-Amazing-and-Cool-Background-For-Desktop-13.jpg",
-        "https://i.ytimg.com/vi/qfS84lQbkw8/maxresdefault.jpg",
-        "https://i.ytimg.com/vi/yqXZrKOuG58/maxresdefault.jpg",
+        "http://wallpaperswide.com/download/gta_v_8-wallpaper-3840x2160.jpg",
+        "https://images7.alphacoders.com/587/587535.jpg",
+        "http://flashwallpapers.com/wp-content/uploads/2015/06/gta-5-4k-wallpaper-3.jpg",
+        ""
     ],
     backgroundtimer: 6, //seconds
     fadespeed:2, //seconds, 2 or more is recommended, otherwise some flickering may occur.
