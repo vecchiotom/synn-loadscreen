@@ -36,7 +36,7 @@ function InitControls()
 */
 function UpdateVolume()
 {
-    setVolume(slider.value);
+    setVolume((slider.value-1));
 }
 
 
