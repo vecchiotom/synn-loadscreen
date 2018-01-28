@@ -101,4 +101,15 @@ var config =
         Default volume for the player. Please keep this under 50%, to not blowout someones eardrums x)
      */
     musicVolume: 20,
+    /*
+        array of images you'd like to display in the background.
+        You can:
+        - use a link (https://example.com/image.jpg)
+        - use a image stored in the img folder (example.jpg)
+    */
+    background: 
+    [
+        "https://example.com/image.jpg"
+        "example.jpg"
+    ],
 }
