@@ -12,7 +12,7 @@ function Init()
     logo.setAttribute("height", config.imageSize[1]);
     
 
-    if(config.singleProgressBar)
+    if(config.progressBarType == 0)
     {
         //Start single progressbar.
         var progressBar = document.getElementById("pb0");
@@ -29,6 +29,11 @@ function Init()
             {
                 var progressBar = document.getElementById("pb" + i);
                 progressBar.classList.remove("hide");
+
+                if(config.progressBarType == 2)
+                {
+                    progressBar.classList.add("pbCollapse");
+                }
             }
         }
 

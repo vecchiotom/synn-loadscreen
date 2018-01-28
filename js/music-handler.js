@@ -16,7 +16,6 @@ var title = "n.a.";
 
 function onYouTubeIframeAPIReady() 
 {
-
     var videoId = config.music[index];
 
     player = new YT.Player('player', {

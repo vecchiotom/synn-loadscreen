@@ -27,13 +27,12 @@ body
     margin: auto;
 }
 
-#content-container
+.content-container
 {
     display: block;
     margin: auto;
 
     width: 60%;
-    margin-top: 120px;
 }
 
 /*
@@ -65,8 +64,14 @@ progress::-webkit-progress-value
     animation-name: example;
     animation-duration: 10s;
     animation-play-state: running;
-    border-radius: 20px; 
+    border-radius: 20px;
     background-size: 60px 30px, 100% 100%, 100% 100%;
+}
+
+.pbCollapse
+{
+    width: 24.63% !important
+
 }
 
 /*
@@ -85,7 +90,6 @@ progress::-webkit-progress-value
 .loading-text
 {
     display: inline-block;
-    margin-left: 10px;
 }
 
 /*

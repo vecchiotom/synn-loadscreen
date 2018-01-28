@@ -1,7 +1,7 @@
 /* Color for single progressbar. */
 #pb0::-webkit-progress-value
 {
-    background-color: rgb(233, 198, 70);
+    background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
 }
 
 /* Color for multiple progressbars, #1 */
