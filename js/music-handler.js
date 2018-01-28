@@ -11,9 +11,11 @@ ytScript.parentNode.insertBefore(tag, ytScript);
 
 //Pick random index to start at.
 var index = lib.rand(0, config.music.length);
+var title = "not playing...";
 
 
-function onYouTubeIframeAPIReady() {
+function onYouTubeIframeAPIReady() 
+{
 
     var videoId = config.music[index];
 
@@ -27,8 +29,8 @@ function onYouTubeIframeAPIReady() {
             'enablejsapi': 1,
         },
         events: {
-        'onReady': onPlayerReady,
-        'onStateChange': onPlayerStateChange
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
         }
     });
 
@@ -36,6 +38,9 @@ function onYouTubeIframeAPIReady() {
 
 function onPlayerReady(event) 
 {
+    title = event.target.getVideoData().title;
+    console.log(JSON.stringify(event));
+
     player.setVolume(config.musicVolume);
     player.setPlaybackQuality('small');
 
@@ -44,14 +49,18 @@ function onPlayerReady(event)
 
 function onPlayerStateChange(event) 
 {
-  if (event.data == YT.PlayerState.ENDED) 
-  {
-      index++;
-      play();
-  }
+    if(event.data == YT.PlayerState.PLAYING)
+    {
+        title = event.target.getVideoData().title;
+        console.log(title);
+    }
+    if (event.data == YT.PlayerState.ENDED) {
+        index++;
+        play();
+    }
 }
 
-function play()
+function play() 
 {
     var idx = index % config.music.length;
     var videoId = config.music[idx];
@@ -60,12 +69,12 @@ function play()
     player.playVideo();
 }
 
-function pause()
+function pause() 
 {
     player.pauseVideo();
 }
 
 function stop() 
 {
-  player.stopVideo();
+    player.stopVideo();
 }
