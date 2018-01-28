@@ -32,6 +32,11 @@ function UpdateMusicInfo()
     }
 }
 
+function UpdateMouse()
+{
+
+}
+
 var playing = true;
 
 function OnPlayClick()
@@ -50,4 +55,16 @@ function OnPlayClick()
 
         playButton.innerHTML = "Pause";
     }
+}
+
+window.onload = function() {
+  document.body.addEventListener("mousemove", function(event)
+  {
+        var cursor = document.getElementById("cursor");
+
+        var x = event.pageX - cursor.width + 7;
+
+        cursor.style.left = x;
+        cursor.style.top = event.pageY - 7;
+  });
 }

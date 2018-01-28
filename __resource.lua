@@ -8,6 +8,7 @@ files {
     
     'fonts/gravity.otf',
 
+    'img/cursor.png',    
     'img/logo.png',
     'img/logo2.png',
 
@@ -18,8 +19,6 @@ files {
     'js/progressbar-renderer.js',
     'js/music-handler.js',
     'js/music-controls.js',
-    
-    
 }
 
 loadscreen 'index.html'
