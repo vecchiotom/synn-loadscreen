@@ -1,24 +1,39 @@
-
+/*
+    DOM elements....
+*/
 var slider = document.getElementById("volumeSlider");
 var np = document.getElementById("now-playing");
 
 var playButton = document.getElementById("playButton");
 playButton.addEventListener("click", OnPlayClick);
 
+/* 
+    Setup the audio controls and create interval for music info updates.
+*/
 InitControls();
 setInterval(UpdateMusicInfo, 1000);
 
+/* 
+    Initalize controls for music.
+*/
 function InitControls()
 {
     slider.setAttribute("value", config.musicVolume);
     slider.addEventListener("change", UpdateVolume, false);
 }
 
+/* 
+    Update the volume of the player.
+*/
 function UpdateVolume()
 {
     setVolume(slider.value);
 }
 
+
+/* 
+    Update the music info.
+*/
 function UpdateMusicInfo()
 {
 
@@ -32,13 +47,12 @@ function UpdateMusicInfo()
     }
 }
 
-function UpdateMouse()
-{
-
-}
-
 var playing = true;
 
+
+/* 
+    Process the events from the start/stop button.
+ */
 function OnPlayClick()
 {
     if(playing)
@@ -57,6 +71,10 @@ function OnPlayClick()
     }
 }
 
+
+/*
+    Move cursor around.
+*/
 window.onload = function() {
   document.body.addEventListener("mousemove", function(event)
   {
