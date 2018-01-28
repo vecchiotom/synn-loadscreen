@@ -112,7 +112,7 @@ var config =
         "http://wallpaperswide.com/download/gta_v_8-wallpaper-3840x2160.jpg",
         "https://images7.alphacoders.com/587/587535.jpg",
         "http://flashwallpapers.com/wp-content/uploads/2015/06/gta-5-4k-wallpaper-3.jpg",
-        ""
+        
     ],
     backgroundtimer: 6, //seconds
     fadespeed:2, //seconds, 2 or more is recommended, otherwise some flickering may occur.
