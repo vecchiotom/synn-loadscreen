@@ -12,15 +12,18 @@ A simple loading screen resource for FiveM.
 
 - Loading screen image
 - Rotating loading messages
+- Music player
+    - Play videos directly from youtube.
+    - Pause and unpause and control volume on the fly.
+
 - All of the above can be edited in the config.
 
 <hr>
 
 ## Planned
  
-- Music player
-    - Can be stopped/paused.
-	- Volume controls
+- Backgrounds
+    - Rotating backgrounds with fade in and fade out.
 
 <hr>
 
