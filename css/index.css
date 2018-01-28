@@ -8,6 +8,30 @@ body
 {
      background: linear-gradient(to top, rgb(20,20,20), rgb(40,40,40));
      overflow: hidden;
+
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+  }
+  #sliderimage {
+    opacity:1;
+    transition: opacity 1s; 
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position:fixed;
+}
+
+#sliderimage.fadeOut {
+    opacity:0;
+}
+#slider {
+    z-index: -1;
+    width:100%;
+    height:100%;
+    position:fixed;
 }
 
 *
@@ -158,6 +182,6 @@ progress::-webkit-progress-value
 #cursor
 {
     position: absolute;
-    z-index: 999;
+    z-index: 1;
     pointer-events: none;
 }

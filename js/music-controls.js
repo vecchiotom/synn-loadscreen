@@ -6,6 +6,7 @@ var slider = document.getElementById("volumeSlider");
 var np = document.getElementById("now-playing");
 
 var playButton = document.getElementById("playButton");
+
 playButton.addEventListener("click", OnPlayClick);
 
 /* 

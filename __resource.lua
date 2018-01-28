@@ -20,6 +20,7 @@ files {
     'js/progressbar-renderer.js',
     'js/music-handler.js',
     'js/music-controls.js',
+    'js/background.js',
 }
 
 loadscreen 'index.html'
