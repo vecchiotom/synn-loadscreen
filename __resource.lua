@@ -12,7 +12,10 @@ files {
     'img/cursor.png',    
     'img/logo.png',
     'img/logo2.png',
-
+    'img/bg1.png',
+    'img/bg2.png',
+    'img/bg3.png',
+    
     'js/synn.js',
     'js/config.js',
     'js/progressbar-handler.js',
@@ -20,7 +23,7 @@ files {
     'js/progressbar-renderer.js',
     'js/music-handler.js',
     'js/music-controls.js',
-    'js/background.js',
+    'js/background-handler.js',
 }
 
 loadscreen 'index.html'
