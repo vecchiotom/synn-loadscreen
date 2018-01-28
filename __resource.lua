@@ -2,8 +2,7 @@ description 'A simple loading screen!'
 
 files {
     'index.html',
-
-    'css/synn.css'
+    
     'css/index.css',
     'css/colors.css',
     
