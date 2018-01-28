@@ -78,16 +78,21 @@ function GetTypeProgress(type)
 function GetTotalProgress()
 {
     var totalProgress = 0;
+    var totalStates = 0;
     
     for(var i = 0; i < types.length; i++)
     {
         var key = types[i];
-        totalProgress += GetTypeProgress(key);
+        if(config.progressBars[key].enabled)
+        {
+            totalProgress += GetTypeProgress(key);
+            totalStates++;
+        }
     }
     
     //Dont want to divide by zero because it will return NaN.
     //Be nice and return a zero for us.
     if(totalProgress == 0) return 0;
     
-    return totalProgress / stateCount;
+    return totalProgress / totalStates;
 }
