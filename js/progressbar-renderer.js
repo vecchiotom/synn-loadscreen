@@ -47,7 +47,7 @@ function Init()
     message.innerHTML = config.loadingMessages[index];
 
     //Account for transition time (about ~400ms).
-    setInterval(RotateMessage, (config.loadingMessageSpeed + 600));
+    setInterval(RotateMessage, (config.loadingMessageSpeed + 400));
 }
 
 function UpdateMulti()
@@ -60,13 +60,19 @@ function UpdateMulti()
         var progress =  GetTypeProgress(types[i]);
         var progressBar = document.getElementById("pb" + i);
         
-        if(progressCache[i + 1] != null)
+        if(progressCache[i] != null)
         {
-            progress = Math.max(progress, progressCache[i + 1]);
+            progress = Math.max(progress, progressCache[i]);
+        }
+
+        if(isNaN(progress))
+        {
+            progress = 0;
+            console.log("Woops!")
         }
 
         progressBar.value = progress;
-        progressCache[i + 1] = progress;
+        progressCache[i] = progress;
     }
 }    
 
@@ -87,13 +93,13 @@ function UpdateTotalProgress()
         var total = GetTotalProgress();
         var totalProgress = document.getElementById("progress-bar-value");
     
-        if(progressCache[0] != null)
+        if(progressCache[10] != null)
         {
-            total = Math.max(total, progressCache[0]);
+            total = Math.max(total, progressCache[10]);
         }
         
         totalProgress.innerHTML = Math.round(total);
-        progressCache[0] = total;
+        progressCache[10] = total;
 }
 
 // Rotate message, load new message every x milliseconds.

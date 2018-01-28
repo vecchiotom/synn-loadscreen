@@ -100,6 +100,11 @@ var config =
 
 
     /*
+        Set to false if you do not want any music.
+    */
+    enableMusic: true,
+
+    /*
         Default volume for the player. Please keep this under 50%, to not blowout someones eardrums x)
      */
     musicVolume: 20,
