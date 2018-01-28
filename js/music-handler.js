@@ -1,11 +1,17 @@
+
+//YouTube IFrame API player.
+var player;
+
+//Create DOM elements for the player.
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
+
 var ytScript = document.getElementsByTagName('script')[0];
 ytScript.parentNode.insertBefore(tag, ytScript);
 
-var player;
+//Pick random index to start at.
 var index = lib.rand(0, config.music.length);
-console.log(index);
+
 
 function onYouTubeIframeAPIReady() {
 
@@ -40,7 +46,6 @@ function onPlayerStateChange(event)
 {
   if (event.data == YT.PlayerState.ENDED) 
   {
-      console.log("DED");
       index++;
       play();
   }

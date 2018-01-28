@@ -38,7 +38,8 @@ function Init()
 
     //Start with random message.
     var message = document.getElementById("message");
-    message.innerHTML = config.loadingMessages[Math.floor(Math.random()*config.loadingMessages.length)];
+    var index = lib.rand(0, config.loadingMessages.length);
+    message.innerHTML = config.loadingMessages[index];
 
     //Account for transition time (about ~400ms).
     setInterval(RotateMessage, (config.loadingMessageSpeed + 600));
@@ -99,7 +100,9 @@ function RotateMessage()
     setTimeout(function()  
     {
         var message = document.getElementById("message");
-        message.innerHTML = config.loadingMessages[Math.floor(Math.random()*config.loadingMessages.length)];
+        var index = lib.rand(0, config.loadingMessages.length);
+        
+        message.innerHTML = config.loadingMessages[index];
         message.classList.add("unfade");
 
         setTimeout(function()  

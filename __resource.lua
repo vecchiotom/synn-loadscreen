@@ -16,7 +16,9 @@ files {
     'js/progressbar-handler.js',
     'js/progressbar-main.js',
     'js/progressbar-renderer.js',
-    'js/youtube-music.js',
+    'js/music-handler.js',
+    'js/music-controls.js',
+    
     
 }
 
