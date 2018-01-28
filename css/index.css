@@ -122,3 +122,36 @@ progress::-webkit-progress-value
     color: rgb(150,150,150);
     font-size: 0.9em;
 }
+
+#playButton
+{
+    color: rgb(150,150,150);
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    outline-color: rgb(233,198,70);
+    background-color: rgb(80,80,80);
+    border: 0;
+    border-style: hidden;
+    padding: 10px;
+    float: left;
+}
+
+#volumeSlider
+{
+    width: 200px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 15px;
+    
+    -webkit-appearance: none;
+    background: rgb(80,80,80);
+    outline: none;
+}
+
+#volumeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    background: rgb(233,198,70);
+}

@@ -1,4 +1,5 @@
 <html>
+    
     <head>
         <link type ="text/css" rel ="stylesheet" href ="css/index.css"/>
         <link type ="text/css" rel ="stylesheet" href ="css/colors.css"/>
@@ -9,6 +10,8 @@
 
         <div id="music-info">
             <p id="now-playing">Now playing: n.a.</p>
+            <button id="playButton" type="button">Pause</button>
+            <input type="range" min="1" max="100" id="volumeSlider">
         </div>
         
         <img id="logo" src="img/logo.png"/>
@@ -38,6 +41,5 @@
     <script src="js/progressbar-renderer.js"></script>
     <script src="js/music-handler.js"></script>
     <script src="js/music-controls.js"></script>
-    
-    
+
 </html>

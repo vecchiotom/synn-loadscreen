@@ -11,7 +11,7 @@ ytScript.parentNode.insertBefore(tag, ytScript);
 
 //Pick random index to start at.
 var index = lib.rand(0, config.music.length);
-var title = "not playing...";
+var title = "n.a.";
 
 
 function onYouTubeIframeAPIReady() 
@@ -52,7 +52,6 @@ function onPlayerStateChange(event)
     if(event.data == YT.PlayerState.PLAYING)
     {
         title = event.target.getVideoData().title;
-        console.log(title);
     }
     if (event.data == YT.PlayerState.ENDED) {
         index++;
@@ -69,6 +68,11 @@ function play()
     player.playVideo();
 }
 
+function resume()
+{
+    player.playVideo();
+}
+
 function pause() 
 {
     player.pauseVideo();
@@ -77,4 +81,9 @@ function pause()
 function stop() 
 {
     player.stopVideo();
+}
+
+function setVolume(volume)
+{
+    player.setVolume(volume)
 }
