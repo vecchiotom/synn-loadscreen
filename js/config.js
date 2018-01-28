@@ -109,7 +109,10 @@ var config =
     */
     background: 
     [
-        "https://example.com/image.jpg"
-        "example.jpg"
+        "https://www.planwallpaper.com/static/images/20-Amazing-and-Cool-Background-For-Desktop-13.jpg",
+        "https://i.ytimg.com/vi/qfS84lQbkw8/maxresdefault.jpg",
+        "https://i.ytimg.com/vi/yqXZrKOuG58/maxresdefault.jpg",
     ],
+    backgroundtimer: 6, //seconds
+    fadespeed:2, //seconds, 2 or more is recommended, otherwise some flickering may occur.
 }
