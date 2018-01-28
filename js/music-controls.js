@@ -5,6 +5,7 @@ var slider = document.getElementById("volumeSlider");
 var np = document.getElementById("now-playing");
 
 var playButton = document.getElementById("playButton");
+
 playButton.addEventListener("click", OnPlayClick);
 
 /* 
@@ -19,7 +20,9 @@ setInterval(UpdateMusicInfo, 1000);
 function InitControls()
 {
     slider.setAttribute("value", config.musicVolume);
+    slider.addEventListener("input", UpdateVolume, false);
     slider.addEventListener("change", UpdateVolume, false);
+
 }
 
 /* 
