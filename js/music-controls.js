@@ -28,7 +28,7 @@ else
 function InitControls()
 {
     slider.setAttribute("value", config.musicVolume);
-    slider.addEventListener("change", UpdateVolume, false);
+    slider.addEventListener("input", UpdateVolume, false);
 }
 
 /* 

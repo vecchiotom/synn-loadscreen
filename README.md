@@ -29,8 +29,10 @@ A simple loading screen resource for FiveM.
 
 ## Example
 
-![Loading screen example](docs/example1.png "An example of the loading screen")
-![Loading screen example](docs/example2.png "An example of the loading screen with multiple progressbars")
+![Loading screen example](docs/single.png "Example of single progressbar")
+![Loading screen example](docs/multi.png "Example of multiple progressbars")
+![Loading screen example](docs/collapse.png "Example of collapsed progressbars")
+
 
 <hr>
 
