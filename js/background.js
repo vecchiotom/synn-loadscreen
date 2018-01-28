@@ -1,4 +1,4 @@
-var bgh = document.getElementById("slider")
+
 var index=0
 
 function slideShow() {
