@@ -105,7 +105,7 @@ function UpdateTotalProgress()
 // Rotate message, load new message every x milliseconds.
 function RotateMessage()
 {
-    lib.fadeInOut(600, "message");
+    lib.fadeInOut(600, "message", 0, 1);
 
     setTimeout(function()
     {

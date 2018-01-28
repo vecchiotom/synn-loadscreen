@@ -5,18 +5,18 @@ var lib =
         return min + Math.floor(Math.random()*max);
     },
 
-    fadeInOut: function(duration, elementId)
+    fadeInOut: function(duration, elementId, min, max)
     {
         var halfDuration = duration / 2;
 
         setTimeout(function()  
         {
             var element = document.getElementById(elementId);
-            element.style.opacity = 0;
+            element.style.opacity = min;
 
             setTimeout(function()  
             {
-                element.style.opacity = 1;
+                element.style.opacity = max;
 
             }, halfDuration);  
 
