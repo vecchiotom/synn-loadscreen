@@ -36,12 +36,9 @@ body
     margin-top: 120px;
 }
 
-.loading-text
-{
-    display: inline-block;
-    margin-left: 10px;
-}
-
+/*
+    Progressbar styling.
+*/
 progress
 {
     margin-top: 5px;
@@ -71,6 +68,10 @@ progress::-webkit-progress-value
     border-radius: 20px; 
     background-size: 60px 30px, 100% 100%, 100% 100%;
 }
+
+/*
+    General purpose classes.
+*/
 .stick-to-right
 {
     float:right;
@@ -81,6 +82,15 @@ progress::-webkit-progress-value
     display: none;
 }
 
+.loading-text
+{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/*
+    Messages styling + fade in and fadeout animations
+*/
 #message {
     opacity:1;
     transition: opacity 0.3s; 
@@ -92,4 +102,12 @@ progress::-webkit-progress-value
 
 #message.unfade {
     opacity:1;
+}
+
+/*
+    Music player styling.
+*/
+#player
+{
+    display: none;
 }

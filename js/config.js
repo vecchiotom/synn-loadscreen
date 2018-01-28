@@ -74,4 +74,33 @@ var config =
         Rotate the loading message every 5000 milliseconds (default value).
     */
     loadingMessageSpeed: 5 * 1000,
+
+    /*
+        Array of music id's to play in the loadscreen.
+        Enter your youtube video id's here.
+    */
+    music:
+    [
+        "AINGJmnwMic",
+        "sT_VcU_jOEM",
+        "PVfjOjiBUkc",
+        "si094i-L_9",
+        "HcJHr_8i-PY",
+        "HCXW-Wbfn4U",
+        "E1nBw1IwCI8",
+        "wzAq_wbVT9A",
+        "KeuPv9lN6zI",
+        "IEZ6JHezCAw",
+        "kGh7spYm2fs",
+        "wLo2RvLU57c",
+        "NYuhye3AYSY",
+        "u3xqpu7v8jU",
+        "mCk78mlzZTQ",
+    ],
+
+
+    /*
+        Default volume for the player. Please keep this under 50%, to not blowout someones eardrums x)
+     */
+    musicVolume: 20,
 }
