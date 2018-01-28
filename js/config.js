@@ -77,25 +77,19 @@ var config =
 
     /*
         Array of music id's to play in the loadscreen.
-        Enter your youtube video id's here.
+        Enter your youtube video id's here. In order to obtain the video ID
+        Take whats after the watch?v= on a youtube link.
+        https://www.youtube.com/watch?v=<videoid>
+        Do not include the playlist id or anything, it should be a 11 digit code.
     */
     music:
     [
-        "AINGJmnwMic",
-        "sT_VcU_jOEM",
-        "PVfjOjiBUkc",
-        "si094i-L_9",
-        "HcJHr_8i-PY",
-        "HCXW-Wbfn4U",
-        "E1nBw1IwCI8",
-        "wzAq_wbVT9A",
-        "KeuPv9lN6zI",
-        "IEZ6JHezCAw",
-        "kGh7spYm2fs",
-        "wLo2RvLU57c",
-        "NYuhye3AYSY",
-        "u3xqpu7v8jU",
-        "mCk78mlzZTQ",
+        "AINGJmnwMic", "sT_VcU_jOEM", "PVfjOjiBUkc", "vWdjWYhEONA",
+        "HcJHr_8i-PY", "HCXW-Wbfn4U", "E1nBw1IwCI8", "wzAq_wbVT9A",
+        "KeuPv9lN6zI", "IEZ6JHezCAw", "kGh7spYm2fs", "wLo2RvLU57c",
+        "NYuhye3AYSY", "u3xqpu7v8jU", "UTBuH5ZNnJQ", "vWdjWYhEONA",
+        "1mIBXtAlfiQ", "TPj4Jk-Sdt8", "zQnj66Xuajs", "8OgHDck_vT0",
+        "KPjI51sXizo", "qDUH3PUoYtw", "SoMeB4QBVug", "8sV6AT6jVuI"
     ],
 
 

@@ -2,3 +2,6 @@
 
 #Ignore batch files.
 *.bat
+
+#Ignore release folder
+[Rr]elease/
