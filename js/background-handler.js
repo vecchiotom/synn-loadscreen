@@ -3,7 +3,10 @@ var background = document.getElementById("background");
 
 NextBackground();
 
-setInterval(NextBackground, config.backgroundSpeed)
+if(config.staticBackground == false)
+{
+    setInterval(NextBackground, config.backgroundSpeed)
+}
 
 
 function NextBackground() 

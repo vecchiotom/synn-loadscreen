@@ -110,6 +110,13 @@ var config =
     musicVolume: 20,
 
     /*
+        Should the background change images?
+        True: it will not change backgrounds.
+        False: it will change backgrounds.
+    */
+    staticBackground: false,
+    
+    /*
         Array of images you'd like to display as the background.
         Provide a path to a local image, using images via url is not recommended.
     */
