@@ -1,4 +1,5 @@
-@font-face {
+@font-face 
+{
     font-family: gravity;
     src: url(../fonts/gravity.otf);
 }
@@ -51,13 +52,12 @@ html, body {
     margin: auto;
 }
 
-#content-container
+.content-container
 {
     display: block;
     margin: auto;
 
     width: 60%;
-    margin-top: 120px;
 }
 
 /*
@@ -89,8 +89,14 @@ progress::-webkit-progress-value
     animation-name: example;
     animation-duration: 10s;
     animation-play-state: running;
-    border-radius: 20px; 
+    border-radius: 20px;
     background-size: 60px 30px, 100% 100%, 100% 100%;
+}
+
+.pbCollapse
+{
+    width: 24.63% !important
+
 }
 
 /*
@@ -109,23 +115,15 @@ progress::-webkit-progress-value
 .loading-text
 {
     display: inline-block;
-    margin-left: 10px;
 }
 
 /*
     Messages styling + fade in and fadeout animations
 */
-#message {
+#message 
+{
     opacity:1;
     transition: opacity 0.3s; 
-}
-    
-#message.fade {
-    opacity:0;
-}
-
-#message.unfade {
-    opacity:1;
 }
 
 /*
@@ -173,7 +171,8 @@ progress::-webkit-progress-value
     outline: none;
 }
 
-#volumeSlider::-webkit-slider-thumb {
+#volumeSlider::-webkit-slider-thumb 
+{
     -webkit-appearance: none;
     width: 25px;
     height: 25px;

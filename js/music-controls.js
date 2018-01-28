@@ -1,6 +1,7 @@
 /*
     DOM elements....
 */
+var container = document.getElementById("music-info");
 var slider = document.getElementById("volumeSlider");
 var np = document.getElementById("now-playing");
 
@@ -11,8 +12,16 @@ playButton.addEventListener("click", OnPlayClick);
 /* 
     Setup the audio controls and create interval for music info updates.
 */
-InitControls();
-setInterval(UpdateMusicInfo, 1000);
+
+if(config.enableMusic)
+{
+    InitControls();
+    setInterval(UpdateMusicInfo, 1000);
+}
+else
+{
+    container.style.display = "none";
+}
 
 /* 
     Initalize controls for music.
@@ -21,8 +30,6 @@ function InitControls()
 {
     slider.setAttribute("value", config.musicVolume);
     slider.addEventListener("input", UpdateVolume, false);
-    slider.addEventListener("change", UpdateVolume, false);
-
 }
 
 /* 
@@ -30,7 +37,7 @@ function InitControls()
 */
 function UpdateVolume()
 {
-    setVolume(slider.value);
+    setVolume((slider.value-1));
 }
 
 
@@ -78,14 +85,17 @@ function OnPlayClick()
 /*
     Move cursor around.
 */
-window.onload = function() {
+window.onload = function() 
+{
   document.body.addEventListener("mousemove", function(event)
   {
         var cursor = document.getElementById("cursor");
 
+        //TODO: More consistent way of aligning the cursor without awkward offsets?
         var x = event.pageX - cursor.width + 7;
+        var y = event.pageY - 7;
 
         cursor.style.left = x;
-        cursor.style.top = event.pageY - 7;
+        cursor.style.top = y;
   });
 }

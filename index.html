@@ -1,6 +1,7 @@
 <html>
     
     <head>
+        <link type ="text/css" rel ="stylesheet" href ="css/synn.css"/>        
         <link type ="text/css" rel ="stylesheet" href ="css/index.css"/>
         <link type ="text/css" rel ="stylesheet" href ="css/colors.css"/>
         
@@ -21,25 +22,26 @@
         
         <img id="logo" src="img/logo.png"/>
 
-        <div id="content-container">
-
+        <div class="content-container">
             <span>
                 <p id="message" class="loading-text">Hold on, crushing snails.... &#x1f40c; &#x1f528;</p>
                 <p class="loading-text stick-to-right"><span id="progress-bar-value">0</span>%</p>
             </span>
-            
+        </div>
+          
+        <div class="content-container">
             <progress id="pb0" class="hide" min="0" max="100" value="0"></progress>
             <progress id="pb1" class="hide" min="0" max="100" value="0"></progress>
             <progress id="pb2" class="hide" min="0" max="100" value="0"></progress>
             <progress id="pb3" class="hide" min="0" max="100" value="0"></progress>
-            <progress id="pb4" class="hide" min="0" max="100" value="0"></progress>                
-        </div>
+            <progress id="pb4" class="hide" min="0" max="100" value="0"></progress>          
+        </div> 
 
         <div id="player"></div>
 
     </body>
 
-    <script src="js/synn-lib.js"></script>    
+    <script src="js/synn.js"></script>    
     <script src="js/config.js"></script>
     <script src="js/progressbar-main.js"></script>
     <script src="js/progressbar-handler.js"></script>

@@ -2,21 +2,22 @@
 //YouTube IFrame API player.
 var player;
 
-//Create DOM elements for the player.
-var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
+if(config.enableMusic)
+{
+    //Create DOM elements for the player.
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
 
-var ytScript = document.getElementsByTagName('script')[0];
-ytScript.parentNode.insertBefore(tag, ytScript);
+    var ytScript = document.getElementsByTagName('script')[0];
+    ytScript.parentNode.insertBefore(tag, ytScript);
 
-//Pick random index to start at.
-var index = lib.rand(0, config.music.length);
-var title = "n.a.";
-
+    //Pick random index to start at.
+    var index = lib.rand(0, config.music.length);
+    var title = "n.a.";
+}
 
 function onYouTubeIframeAPIReady() 
 {
-
     var videoId = config.music[index];
 
     player = new YT.Player('player', {

@@ -13,10 +13,12 @@ var config =
     imageSize: [512, 512],
 
     /*
-        Want to just have one progressbar? Set this to true.
-        Want to have a progressbar for each type? Set this to false. 
+        Define the progressbar type
+            0 = Single progressbar
+            1 = Multiple progressbars
+            2 = Collapsed progressbars
      */
-    singleProgressBar: true,
+    progressBarType: 2,
 
     /*
         Here you can disable some of progressbars.
@@ -25,7 +27,7 @@ var config =
     progressBars:
     {
         "INIT_CORE": {
-            enabled: true,
+            enabled: false, //NOTE: Disabled because INIT_CORE seems to not get called properly. (race condition).
         },
 
         "INIT_BEFORE_MAP_LOADED": {
@@ -96,6 +98,11 @@ var config =
         "kUdCNdd9n28", "qDUH3PUoYtw", "SoMeB4QBVug", "8sV6AT6jVuI"
     ],
 
+
+    /*
+        Set to false if you do not want any music.
+    */
+    enableMusic: true,
 
     /*
         Default volume for the player. Please keep this under 50%, to not blowout someones eardrums x)
