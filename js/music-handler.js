@@ -20,8 +20,8 @@ function onYouTubeIframeAPIReady()
     var videoId = config.music[index];
 
     player = new YT.Player('player', {
-        height: '1',
         width: '1',
+        height: '1',
         playerVars: {
             'autoplay': 0,
             'controls': 0,
@@ -33,16 +33,12 @@ function onYouTubeIframeAPIReady()
             'onStateChange': onPlayerStateChange
         }
     });
-
 }
 
 function onPlayerReady(event) 
 {
     title = event.target.getVideoData().title;
-    console.log(JSON.stringify(event));
-
     player.setVolume(config.musicVolume);
-    player.setPlaybackQuality('small');
 
     play();
 }
@@ -53,6 +49,7 @@ function onPlayerStateChange(event)
     {
         title = event.target.getVideoData().title;
     }
+
     if (event.data == YT.PlayerState.ENDED) {
         index++;
         play();
@@ -64,7 +61,7 @@ function play()
     var idx = index % config.music.length;
     var videoId = config.music[idx];
 
-    player.loadVideoById(videoId);
+    player.loadVideoById(videoId, 0, "tiny");
     player.playVideo();
 }
 
