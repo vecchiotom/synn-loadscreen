@@ -82,7 +82,7 @@ function UpdateSingle()
     UpdateTotalProgress();
 
     var progressBar = document.getElementById("pb0");
-    progressBar.value = progressCache[0];
+    progressBar.value = progressCache[10];
 
 }
 

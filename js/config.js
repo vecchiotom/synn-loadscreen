@@ -18,7 +18,7 @@ var config =
             1 = Multiple progressbars
             2 = Collapsed progressbars
      */
-    progressBarType: 2,
+    progressBarType: 1,
 
     /*
         Here you can disable some of progressbars.
@@ -118,7 +118,6 @@ var config =
         "img/bg1.jpg",
         "img/bg2.jpg",
         "img/bg3.jpg",
-        
     ],
 
     /*

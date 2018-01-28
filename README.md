@@ -9,21 +9,20 @@ A simple loading screen resource for FiveM.
 - Progressbar  
     - Can have multiple progress bars for each type.
     - Can have single progress bars for all types
-
 - Loading screen image
 - Rotating loading messages
 - Music player
     - Play videos directly from youtube.
     - Pause and unpause and control volume on the fly.
-
+- Backgrounds
+    - Rotating backgrounds with fade in and fade out.
 - All of the above can be edited in the config.
 
 <hr>
 
 ## Planned
  
-- Backgrounds
-    - Rotating backgrounds with fade in and fade out.
+- Open for idea's! <3
 
 <hr>
 
@@ -106,6 +105,6 @@ If you wish to contact me:
 - Via the [FiveM forums](https://forum.fivem.net/u/syntasu)
 - Via e-mail: `fivem at synn.nl`
 
-&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;  <sub><sub>Discord is the prefered way of contact.</sub></sub>
+&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;  <sub><sub>Discord is the prefered way of contact.</sub></sub>
 
 <hr>
