@@ -5,9 +5,11 @@ files {
 
     'css/index.css',
     'css/colors.css',
+    'css/icomoon.css',
     
     'fonts/gravity.otf',
-
+    'fonts/icomoon.otf',
+    
     'img/cursor.png',    
     'img/logo.png',
     'img/logo2.png',
