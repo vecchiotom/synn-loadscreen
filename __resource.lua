@@ -8,7 +8,7 @@ files {
     'css/icomoon.css',
     
     'fonts/gravity.otf',
-    'fonts/icomoon.otf',
+    'fonts/icomoon.ttf',
     
     'img/cursor.png',    
     'img/logo.png',

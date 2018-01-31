@@ -121,54 +121,50 @@ progress::-webkit-progress-value
 /*
     Music player styling.
 */
+#music-info
+{
+    padding:20px;
+}
+
 #player
 {
     display: none;
 }
 
-#music-info
-{
-    position: absolute;
-}
-
 #now-playing
 {
-    color: rgb(150,150,150);
     font-size: 0.9em;
+    margin: 0;
+    padding: 0;
 }
 
-#playButton
+.icon-button
 {
-    color: rgb(150,150,150);
-    background: none;
-    border-radius: 0;
-    box-shadow: none;
-    outline-color: rgb(233,198,70);
-    background-color: rgb(80,80,80);
-    border: 0;
-    border-style: hidden;
-    padding: 10px;
-    float: left;
+    color:white;
+    font-size: 24px;
+    display: inline-block;
+    padding-top: 10px;
+
 }
 
 #volumeSlider
 {
     width: 200px;
-    height: 25px;
-    margin-top: 5px;
-    margin-left: 15px;
-    
+    height: 15px;
     -webkit-appearance: none;
-    background: rgb(80,80,80);
+    background: rgba(255,255,255,0.1);
     outline: none;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px
 }
 
 #volumeSlider::-webkit-slider-thumb 
 {
     -webkit-appearance: none;
-    width: 25px;
+    width: 10px;
     height: 25px;
-    background: rgb(233,198,70);
+    background: white;
 }
 
 #cursor

@@ -1,5 +1,11 @@
 var config = 
 {    
+    /*
+        Do we want to show the image?
+        Note that imageSize still affects the size of the image and where the progressbars are located.
+    */
+    enableImage: true,
+
     /* 
         Relative path the the logo we want to display.
     */

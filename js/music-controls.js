@@ -4,11 +4,7 @@
 var container = document.getElementById("music-info");
 var slider = document.getElementById("volumeSlider");
 var np = document.getElementById("now-playing");
-
-var playButton = document.getElementById("playButton");
-
-playButton.addEventListener("click", OnPlayClick);
-
+var playButton = document.getElementById("play-button")
 /* 
     Setup the audio controls and create interval for music info updates.
 */
@@ -70,14 +66,25 @@ function OnPlayClick()
         playing = false;
         pause();
 
-        playButton.innerHTML = "Start";
+        playButton.classList.remove("icon-pause2")
+        playButton.classList.add("icon-play3")
+        
     }
     else
     {
         playing = true;
         resume();
 
-        playButton.innerHTML = "Pause";
+        playButton.classList.remove("icon-play3")
+        playButton.classList.add("icon-pause2")
+    }
+}
+
+function OnSkipClick()
+{
+    if(playing)
+    {
+        skip();
     }
 }
 
