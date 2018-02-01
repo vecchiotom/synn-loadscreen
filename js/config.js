@@ -1,5 +1,11 @@
 var config = 
 {    
+    /*
+        Do we want to show the image?
+        Note that imageSize still affects the size of the image and where the progressbars are located.
+    */
+    enableImage: true,
+
     /* 
         Relative path the the logo we want to display.
     */
@@ -132,5 +138,5 @@ var config =
         should swap images.
      */
     backgroundSpeed: 10 * 1000,
-    backgroundStyle: "slideright",
+    backgroundStyle: "zoom",
 }

@@ -6,11 +6,21 @@ var progressCache = [];
 
 function Init()
 {
+    //TODO: This does not belong in here...
     var logo = document.getElementById("logo");
-    logo.setAttribute("src", config.image);
-    logo.setAttribute("width", config.imageSize[0]);
-    logo.setAttribute("height", config.imageSize[1]);
-    
+
+    if(config.enableImage)
+    {
+        logo.setAttribute("src", config.image);
+        logo.setAttribute("width", config.imageSize[0]);
+        logo.setAttribute("height", config.imageSize[1]);
+    }
+    else
+    {
+        logo.setAttribute("src", config.image);
+        logo.setAttribute("width", config.imageSize[0]);
+        logo.style.visibility = "hidden";
+    }
 
     if(config.progressBarType == 0)
     {

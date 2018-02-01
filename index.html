@@ -1,9 +1,9 @@
 <html>
     
     <head>    
+        <link type ="text/css" rel ="stylesheet" href ="css/icomoon.css"/>        
         <link type ="text/css" rel ="stylesheet" href ="css/index.css"/>
         <link type ="text/css" rel ="stylesheet" href ="css/colors.css"/>
-        
     </head>
 
     <body>
@@ -14,7 +14,8 @@
 
         <div id="music-info">
             <p id="now-playing">Now playing: n.a.</p>
-            <button id="playButton" type="button">Pause</button>
+            <div id="play-button" class="icon-button icon-pause2" onclick="OnPlayClick()"></div>
+            <div id="skip-button" class="icon-button icon-next2" onclick="OnSkipClick()"></div>
             <input type="range" min="1" max="100" id="volumeSlider">
         </div>
         

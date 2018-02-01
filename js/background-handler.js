@@ -50,7 +50,7 @@ function NextBackground()
             background.setAttribute("src", config.background[index]);
         }, 600);
             break;
-            case "zoomin":
+            case "zoom":
             index = (index + 1) % config.background.length;
             background.setAttribute("class", "zoomin")
             setTimeout(() => {

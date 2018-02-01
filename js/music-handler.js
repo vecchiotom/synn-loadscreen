@@ -12,13 +12,13 @@ if(config.enableMusic)
     ytScript.parentNode.insertBefore(tag, ytScript);
 
     //Pick random index to start at.
-    var index = lib.rand(0, config.music.length);
+    var musicIndex = lib.rand(0, config.music.length);
     var title = "n.a.";
 }
 
 function onYouTubeIframeAPIReady() 
 {
-    var videoId = config.music[index];
+    var videoId = config.music[musicIndex];
 
     player = new YT.Player('player', {
         width: '1',
@@ -54,7 +54,7 @@ function onPlayerStateChange(event)
 
     if (event.data == YT.PlayerState.ENDED) 
     {
-        index++;
+        musicIndex++;
         play();
     }
 }
@@ -83,7 +83,7 @@ function onPlayerError(event)
 
 function skip()
 {
-    index++;
+    musicIndex++;
     play();
 }
 
@@ -91,7 +91,7 @@ function play()
 {
     title = "n.a.";
 
-    var idx = index % config.music.length;
+    var idx = musicIndex % config.music.length;
     var videoId = config.music[idx];
 
     console.log("Playing next.. id: " + idx + " vid:" + videoId);
