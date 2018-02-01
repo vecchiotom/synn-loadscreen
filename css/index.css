@@ -4,6 +4,16 @@
     src: url(../fonts/gravity.otf);
 }
 
+@keyframes slideright {
+    0%   {margin-left:0px}
+    100% {margin-left:110% }
+}
+@keyframes zoomin {
+    0% {width:100%;height: 100%; opacity: 0.3}
+    50% {width: 300%;height: 300%;opacity: 0}
+    100% {width:100%;height: 100%;opacity:0.3}
+}
+
 body
 {
     overflow: hidden;
@@ -16,14 +26,48 @@ body
 #background
 {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-
+    top: 50%;
+    left: 50%;
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     z-index: -1;
     opacity: 0.3;
-    transition: opacity 0.3s; 
+    transition: opacity 1s; 
+}
+#background2 {
+    opacity:0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity:0;
+    transition: opacity 1s; 
+}
+.slideright {
+    animation-name: slideright;
+    animation-duration: 3.2s;
+}
+
+.zoomin
+{
+    
+    animation-name: zoomin;
+    animation-duration: 4.2s;
+    justify-content: center;
+    
+
 }
 
 *
