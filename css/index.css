@@ -8,6 +8,11 @@
     0%   {margin-left:0px}
     100% {margin-left:110% }
 }
+@keyframes spin {
+    from {transform:rotate(0deg); opacity:0.3; width:100%;height: 100%}
+    to {transform:rotate(3600deg); opacity:0;width:10%;height:10%}
+}
+
 @keyframes zoomin {
     0% {width:100%;height: 100%; opacity: 0.3}
     50% {width: 300%;height: 300%;opacity: 0}
@@ -51,15 +56,30 @@ body
     -moz-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    z-index: -1;
+    z-index: 0;
     opacity:0;
     transition: opacity 1s; 
 }
-.slideright {
+.slideright 
+{
     animation-name: slideright;
     animation-duration: 3.2s;
 }
+.spin {
+   
+        
+        top: 0px !important;
+        left: 0px !important;
+        -o-transform: unset !important;
+    -ms-transform: unset !important;
+    -moz-transform: unset !important;
+    -webkit-transform: unset !important;
+    transform: unset !important;
+        animation-name: spin;
+        animation-duration: 3s;
 
+   
+}
 .zoomin
 {
     

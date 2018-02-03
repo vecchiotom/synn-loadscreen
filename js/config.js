@@ -138,5 +138,5 @@ var config =
         should swap images.
      */
     backgroundSpeed: 10 * 1000,
-    backgroundStyle: "zoom",
+    backgroundStyle: "spin",
 }

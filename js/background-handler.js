@@ -39,6 +39,36 @@ function NextBackground()
                 
             }, 1900);
         break;
+        case "spin":
+        index = (index + 1) % config.background.length;
+            if (background.style.opacity=="0"){
+                background.setAttribute("src", config.background[index])
+                background.style.opacity=0.3
+                background2.setAttribute("class", "spin")
+
+            } else if (background2.style.opacity=="0"){
+                background2.setAttribute("src", config.background[index])
+                background2.style.opacity=0.3
+                background.setAttribute("class", "spin")
+            }
+            
+            setTimeout(() => {
+                if ( (" " + background.className + " ").replace(/[\n\t]/g, " ").indexOf(" spin ") > -1 ){
+                    
+                    background.style.opacity=0
+                    
+                    background.setAttribute("class", "")
+                
+                }else{
+                    
+                    background2.style.opacity=0
+                    
+                    
+                    background2.setAttribute("class", "")
+                }
+                
+            }, 2600);
+        break;
         case "fade":
         index = (index + 1) % config.background.length;
 
@@ -63,7 +93,18 @@ function NextBackground()
             }, 3800);
             break;
         default:
+        index = (index + 1) % config.background.length;
+
+        lib.fadeInOut(600, "background", 0, 0.2);
+    
+        setTimeout(function()
+        {
+            
+            background.setAttribute("src", config.background[index]);
+        }, 600);
             break;
+            
+            
     }
     
 }
