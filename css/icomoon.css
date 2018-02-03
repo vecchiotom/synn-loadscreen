@@ -4,6 +4,7 @@
     src: url(../fonts/icomoon.ttf);
 }
 
+
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -29,14 +30,17 @@
 .icon-pause2:before {
   content: "\ea1d";
 }
+.icon-previous2:before {
+  content: "\ea23";
+}
 .icon-next2:before {
   content: "\ea24";
 }
 .icon-volume-high:before {
   content: "\ea26";
 }
-.icon-facebook2:before {
-  content: "\ea91";
+.icon-facebook:before {
+  content: "\ea90";
 }
 .icon-twitter:before {
   content: "\ea96";

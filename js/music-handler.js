@@ -86,6 +86,11 @@ function skip()
     musicIndex++;
     play();
 }
+function back()
+{
+    musicIndex--;
+    play();
+}
 
 function play() 
 {

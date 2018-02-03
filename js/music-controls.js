@@ -88,7 +88,11 @@ function OnSkipClick()
     }
 }
 
-
+function OnPrevClick() {
+    if (playing) {
+        back()
+    }
+}
 /*
     Move cursor around.
 */
