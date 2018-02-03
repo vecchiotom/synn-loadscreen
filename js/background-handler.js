@@ -69,6 +69,36 @@ function NextBackground()
                 
             }, 2600);
         break;
+        case "browse":
+        index = (index + 1) % config.background.length;
+            if (background.style.opacity=="0"){
+                background.setAttribute("src", config.background[index])
+                background.style.opacity=0.3
+                background2.setAttribute("class", "browse")
+
+            } else if (background2.style.opacity=="0"){
+                background2.setAttribute("src", config.background[index])
+                background2.style.opacity=0.3
+                background.setAttribute("class", "browse")
+            }
+            
+            setTimeout(() => {
+                if ( (" " + background.className + " ").replace(/[\n\t]/g, " ").indexOf(" browse ") > -1 ){
+                    
+                    background.style.opacity=0
+                    
+                    background.setAttribute("class", "")
+                
+                }else{
+                    
+                    background2.style.opacity=0
+                    
+                    
+                    background2.setAttribute("class", "")
+                }
+                
+            }, 3000);
+        break;
         case "fade":
         index = (index + 1) % config.background.length;
 

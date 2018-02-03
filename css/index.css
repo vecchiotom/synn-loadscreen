@@ -12,6 +12,10 @@
     from {transform:rotate(0deg); opacity:0.3; width:100%;height: 100%}
     to {transform:rotate(3600deg); opacity:0;width:10%;height:10%}
 }
+@keyframes browse {
+    from {margin-left: 0%;transform:rotate(0deg); opacity:0.3; width:100%;height: 100%}
+    to {margin-left: 110%;transform:rotate(90deg); opacity:0;width:10%;height:10%}
+}
 
 @keyframes zoomin {
     0% {width:100%;height: 100%; opacity: 0.3}
@@ -66,8 +70,6 @@ body
     animation-duration: 3.2s;
 }
 .spin {
-   
-        
         top: 0px !important;
         left: 0px !important;
         -o-transform: unset !important;
@@ -76,9 +78,22 @@ body
     -webkit-transform: unset !important;
     transform: unset !important;
         animation-name: spin;
-        animation-duration: 3s;
-
+        animation-duration: 3s; 
+}
+.browse {
    
+        
+    top: 0px !important;
+    left: 0px !important;
+    -o-transform: unset !important;
+-ms-transform: unset !important;
+-moz-transform: unset !important;
+-webkit-transform: unset !important;
+transform: unset !important;
+    animation-name: browse;
+    animation-duration: 3s;
+
+
 }
 .zoomin
 {
